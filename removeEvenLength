@@ -1,0 +1,24 @@
+/* 
+ * Write a method called removeEvenLength that takes an ArrayList of 
+ * strings as a parameter and remove all of the strings of even length
+ * from the list
+ */
+	
+public static void removeEvenLength(ArrayList<String> list) {
+		
+	//Iterate through each element of the list
+	for(int i = 0; i < list.size(); i++) {
+		//add each element to a variable
+		String word = list.get(i);
+		//check if the length of the element is an even number
+		if (word.length() % 2 == 0) {
+			//remove word from the list
+			list.remove(word);
+		}
+					
+		}
+		
+	System.out.println(list);
+	}	
+		
+}
